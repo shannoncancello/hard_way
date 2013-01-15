@@ -11,7 +11,7 @@ txt.close()
 puts "I'll also ask you to type it again:"
 #Prints > asking me to enter the txt file location again
 print prompt
-file_again = STDIN.gets.comp()
+file_again = STDIN.gets.chomp()
 
 txt_again = File.open(file_again)
 #calls the read method on the second location I entered
