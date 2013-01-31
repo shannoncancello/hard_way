@@ -14,9 +14,11 @@ class MainHall < Game
       kitchen = Kitchen.new @player
       kitchen.start
     elsif your_choice.include?("left")
-      dining_room(
+      dining_room = DiningRoom.new @player
+      dining_room.start
     else
-      staircase()
+      staircase = Staircase.new @player
+      staircase.start
     end
   end
 end
